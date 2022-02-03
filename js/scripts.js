@@ -28,12 +28,12 @@ $(function () {
         if (bodyScroll > 300) {
 
             navbar.addClass("nav-scroll");
-            logo.attr('src', 'img/logo-catalise-black.png');
+            logo.attr('src', 'img/logotractordark.png');
 
         } else {
 
             navbar.removeClass("nav-scroll");
-            logo.attr('src', 'img/logo-catalise.png');
+            logo.attr('src', 'img/logotractor.png');
         }
     });
 
@@ -81,7 +81,8 @@ $(function () {
             $('.topnav .menu-icon .text').addClass('open');
 
             navDark.addClass("navlit");
-            logoChan.attr('src', 'img/logo-light.png');
+            logoChan.attr('src', 'img/logotractor.png');
+    
 
             window.addEventListener('scroll', noScroll);
 
@@ -92,7 +93,8 @@ $(function () {
             $('.topnav .menu-icon .text').removeClass('open');
 
             navDark.removeClass("navlit");
-            logoChan.attr('src', 'img/logo-dark.png');
+            logoChan.attr('src', 'img/logotractordark.png');
+            logoChan.classList.add('banana')
 
             window.removeEventListener('scroll', noScroll);
         }
